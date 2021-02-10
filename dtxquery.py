@@ -5,7 +5,7 @@ from cassandra.query  import tuple_factory
 try:
     connection = Connection()
     shows = connection.session.execute(
-        "SELECT * FROM simpleds.movies_and_tv LIMIT 5 "
+        "SELECT * FROM simpleds.movies_and_tv LIMIT 5"
     )
     for show in shows:
      print(show[5] + ' made ' + show[10]);     
